@@ -1,4 +1,7 @@
 
+'use strict';
+
+
 const Canvas = require('canvas')
 const Image = Canvas.Image
 const strPool = 'abcdefghijklmnopqrstuvwxyz'
@@ -33,9 +36,9 @@ function getRandomText(pool, len) {
 	return res
 }
 
-module.exports = exports.default = function(opts = {}, callback) {
+module.exports = exports.default = function(opts, callback) {
 	
-	let defs = Object.assign(defaults, opts)
+	let defs = Object.assign({}, defaults, opts)
 
 	let canvas = new Canvas(defs.size.width, defs.size.height)
 	let ctx = canvas.getContext('2d')
