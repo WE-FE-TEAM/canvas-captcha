@@ -1,5 +1,5 @@
 {
-  "name": "canvas-captcha",
+  "name": "we-canvas-captcha",
   "version": "3.0.0",
   "description": "a nodejs captcha module based on node-canvas",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zxdong262/canvas-captcha.git"
+    "url": "https://github.com/WE-FE-TEAM/canvas-captcha"
   },
   "keywords": [
     "captcha",
@@ -34,10 +34,10 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zxdong262/canvas-captcha/issues"
+    "url": "https://github.com/WE-FE-TEAM/canvas-captcha/issues"
   },
-  "homepage": "https://github.com/zxdong262/canvas-captcha",
+  "homepage": "https://github.com/WE-FE-TEAM/canvas-captcha",
   "engines": {
-    "node": ">= 6"
+    "node": ">= 5"
   }
 }
