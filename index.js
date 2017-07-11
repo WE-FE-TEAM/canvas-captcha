@@ -18,6 +18,8 @@ const defaults = {
 	,rotate: .01
 	,charLength: 4
 	,font: '26px Unifont'
+	,textAlign : 'center'
+	,textBaseline : 'middle'
 	,strokeStyle: '#0088cc'
 	,bgColor: '#eeeeee'
 	,confusion: true
@@ -28,8 +30,8 @@ const defaults = {
 
 function getRandomText(pool, len) {
 	var lenp = pool.length
-	,i = 0
-	,res = ''
+		,i = 0
+		,res = ''
 	for(;i < len;i ++) {
 		res += pool[Math.floor(Math.random() * lenp)]
 	}
@@ -37,7 +39,7 @@ function getRandomText(pool, len) {
 }
 
 module.exports = exports.default = function(opts, callback) {
-	
+
 	let defs = Object.assign({}, defaults, opts)
 
 	let canvas = new Canvas(defs.size.width, defs.size.height)
@@ -65,6 +67,8 @@ module.exports = exports.default = function(opts, callback) {
 	//text captcha
 	ctx.beginPath()
 	ctx.strokeStyle = defs.strokeStyle
+	ctx.textAlign = defs.textAlign
+	ctx.textBaseline = defs.textBaseline
 	ctx.font = defs.font
 	ctx.rotate(defs.rotate)
 	ctx.strokeText(text, defs.textPos.left, defs.textPos.top)

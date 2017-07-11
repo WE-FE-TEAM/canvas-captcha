@@ -1,6 +1,6 @@
 {
   "name": "we-canvas-captcha",
-  "version": "3.0.1",
+  "version": "3.1.1",
   "description": "a nodejs captcha module based on node-canvas",
   "main": "index.js",
   "scripts": {
