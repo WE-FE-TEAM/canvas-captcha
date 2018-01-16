@@ -106,6 +106,7 @@ node test/app.js
 
 
 ## changelog
+- 4.0.0 use canvas 1.6.9
 - 2.1.0 use canvas 1.3.15, support node 6.2+
 - 2.0.1 use canvas 1.3.12, a little rewrite
 - 2.0.0 use canvas 1.2.9, compatible with nodejs v4
