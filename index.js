@@ -66,12 +66,20 @@ module.exports = exports.default = function(opts, callback) {
 
 	//text captcha
 	ctx.beginPath()
-	ctx.strokeStyle = defs.strokeStyle
+	if( defs.fillStyle ){
+        ctx.fillStyle = defs.fillStyle
+	}else{
+        ctx.strokeStyle = defs.strokeStyle
+	}
 	ctx.textAlign = defs.textAlign
 	ctx.textBaseline = defs.textBaseline
 	ctx.font = defs.font
 	ctx.rotate(defs.rotate)
-	ctx.strokeText(text, defs.textPos.left, defs.textPos.top)
+	if( defs.fillStyle ){
+        ctx.fillText(text, defs.textPos.left, defs.textPos.top)
+	}else{
+        ctx.strokeText(text, defs.textPos.left, defs.textPos.top)
+	}
 
 
 	//to buffer
